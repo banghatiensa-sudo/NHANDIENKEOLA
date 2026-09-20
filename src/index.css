@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-shadow-wood {
+    text-shadow: 
+      0 1px 0 #78350f,
+      0 2px 0 #78350f,
+      0 3px 0 #451a03,
+      0 4px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .text-shadow-gold {
+    text-shadow:
+      0 1px 0 #fef08a,
+      0 2px 0 #eab308,
+      0 3px 0 #ca8a04,
+      0 4px 0 #854d0e,
+      0 6px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .text-shadow-blue {
+    text-shadow:
+      0 1px 0 #93c5fd,
+      0 2px 0 #3b82f6,
+      0 3px 0 #1d4ed8,
+      0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .text-shadow-red {
+    text-shadow:
+      0 1px 0 #fca5a5,
+      0 2px 0 #ef4444,
+      0 3px 0 #b91c1c,
+      0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  .text-shadow-green {
+    text-shadow:
+      0 1px 0 #86efac,
+      0 2px 0 #22c55e,
+      0 3px 0 #15803d,
+      0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes scanLine {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 96%;
+    opacity: 0.8;
+  }
+}
+
+.animate-scan-line {
+  animation: scanLine 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 3.5s ease-in-out infinite;
+}
+
+@keyframes pedestalPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5), inset 0 0 10px rgba(56, 189, 248, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.85), inset 0 0 15px rgba(56, 189, 248, 0.5);
+  }
+}
+
+.pedestal-glow {
+  animation: pedestalPulse 2.5s ease-in-out infinite;
+}
+
+/* Custom scrollbars if any */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Chặng 1: Nhận Diện 'Kẹo Lạ' Biến Hình",
+  "description": "Web app game giáo dục tương tác trình chiếu lớp học về nhận diện vật phẩm bất thường và kỹ năng phòng tránh cho học sinh tiểu học.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
